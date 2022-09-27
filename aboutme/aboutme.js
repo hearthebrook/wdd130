@@ -1,9 +1,34 @@
-const PI = 3.14;
-const radius = 3;
-let area = 0;
-/* used for debuging*/
-console.long(radius);
+const favoriteFoods = ["Watermellon", " Tomatoes", " Peaches", " Chocolate"]; 
 
-area = radius * radius * pi;
-radius = 4;
-area = radius * radius * pi;
+const para = document.createElement("p");
+para.textContent = `My Favorite foods:  ${favoriteFoods}`;
+
+document.body.appendChild(para);
+
+favoriteFoods.shift();
+
+para.textContent = `My Favorite foods:  ${favoriteFoods}`;
+
+favoriteFoods.push(" Cinnamon Bears");
+
+para.textContent = `My Favorite foods:  ${favoriteFoods}`;
+
+// Date and Time
+const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+    ];
+
+
+var currentdate = new Date(); 
+console.log(currentdate);
+day = currentdate.getDay();
+
+
+const todayElement = document.querySelector("#displayToday");
+todayElement.textContent = weekday[day];
