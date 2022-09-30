@@ -1,0 +1,53 @@
+
+*{
+    line-height: 1.7;
+}
+
+body {
+    margin: 5em 12em;
+    max-width: 720px;
+ }
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: .4rem;
+    margin: 0;
+    padding: .5em 0;
+}
+
+
+h2 {
+    color: #006EB6;
+    font-size: .85em;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    margin: 0;
+}
+
+header::after {
+    content: "";
+    display: block;
+    border: .01px solid #EEEEEE;
+}
+
+main {
+    margin: 0em;
+    margin-top: 3em;
+}
+
+li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-top: 5em;
+}
