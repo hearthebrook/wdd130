@@ -32,3 +32,6 @@ day = currentdate.getDay();
 
 const todayElement = document.querySelector("#displayToday");
 todayElement.textContent = weekday[day];
+
+// Ternary statements are like if statements but in one line :) 
+// Switch statements for long if else statements 
