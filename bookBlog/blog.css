@@ -1,0 +1,66 @@
+.main_nav {
+    display:grid;
+    column-gap:20px;
+    grid-template-columns: 1fr 50px 50px 50px;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline;
+    grid-column: 2;
+}
+
+main {
+    display:grid;
+    column-gap:20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main_page {
+    grid-column: 1;
+}
+
+.filter {
+    grid-column: 2;
+}
+
+.book_info {
+    display:grid;
+    column-gap:20px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.summary_info {
+    grid-column: 1;
+    text-align: right;
+}
+
+.title_img {
+    grid-column: 2;
+}
+
+
+h1 {
+    color:#473144;
+    font: Impact, serif;
+    text-align: center;
+}
+
+ul {
+    color:#AF1B3F;
+    font: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    color:#AF1B3F; 
+    font: Impact, serif;
+}
+
+#summary_info {
+    color:#473144;
+    font: Helvetica, Arial, sans-serif;
+}
+
