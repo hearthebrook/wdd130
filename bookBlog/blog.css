@@ -35,6 +35,7 @@ main {
 
 .summary_info {
     grid-column: 1;
+    text-align: right;
 }
 
 .title_img {
