@@ -1,7 +1,10 @@
 .main_nav {
-    display:grid;
+    display: grid;
     column-gap:20px;
-    grid-template-columns: 1fr 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: end;
+    border-top: 1px solid #EFC69B;
+    border-bottom: 1px solid #EFC69B;
 }
 
 ul {
@@ -10,13 +13,14 @@ ul {
 
 li {
     display: inline;
-    grid-column: 2;
+
 }
 
 main {
     display:grid;
-    column-gap:20px;
-    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    
 }
 
 .main_page {
@@ -25,17 +29,23 @@ main {
 
 .filter {
     grid-column: 2;
+    border: 1px solid #EFC69B;
 }
 
 .book_info {
     display:grid;
-    column-gap:20px;
-    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+    grid-template-columns: 200px auto;
+    padding-bottom: 1em;
 }
 
 .summary_info {
     grid-column: 1;
     text-align: right;
+    line-height: .7em;
+    border-right: 1px solid #EFC69B;
+    padding-right: 1em;
+
 }
 
 .title_img {
@@ -50,8 +60,11 @@ h1 {
 }
 
 ul {
-    color:#AF1B3F;
     font: Helvetica, Arial, sans-serif;
+}
+
+a {
+    color:#AF1B3F;
 }
 
 h2 {
@@ -64,3 +77,18 @@ h2 {
     font: Helvetica, Arial, sans-serif;
 }
 
+.post-details__date {
+    font-size: 1.2em;
+}
+
+figure {
+    text-align: center;
+}
+/*
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  */

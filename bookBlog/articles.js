@@ -25,3 +25,38 @@ const articles = [
       stars: "⭐⭐⭐⭐"
     }
   ];
+
+function bookTemplate(book) {
+  return `
+  <section class="book_info">
+                <div class="summary_info">
+                    <p class="post-details__date">${book.date}</p>
+                    <p>${book.ages}</p>
+                    <p>${book.genre}</p>
+                    <p>${book.stars}</p>
+                </div>
+                <div class="title_img">
+                    <h2>${book.title}</h2>
+                    <figure>
+                        <img
+                        src=${book.imgSrc}
+                        alt=${book.imgAlt}
+                        />
+                        </figure>
+                    <p>${book.description}
+                        <a href="#">Read More...</a>
+                    </p>
+                </div>
+            </section>
+`
+}
+
+function renderBooks() {
+  const htmlBooks = articles.map(bookTemplate);
+  const newSection = document.createElement('section');
+  newSection.classList.add('main_page');
+  newSection.insertAdjacentHTML("afterbegin", htmlBooks);
+  document.querySelector('main').insertAdjacentElement("afterbegin", newSection);
+}
+
+renderBooks()
