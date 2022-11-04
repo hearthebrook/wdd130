@@ -84,6 +84,17 @@ h2 {
 figure {
     text-align: center;
 }
+
+input{
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+.filter p {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
 /*
 .center {
     display: block;

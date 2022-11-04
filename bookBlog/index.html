@@ -22,6 +22,33 @@
     <main>
         <section class="filter">
             <p>Filter form will go here</p>
+            <form id="filters" method="get">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <p>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+                    </p>
+                    <p>
+                        <label for="password">PW</label>
+                        <input type="password" name="Password" minlength="8" required/>
+                    </p>
+                        <input type="hidden"/>
+                    </fieldset>
+                    <p>
+                <label for="sort">Sort</label>
+                    <select id="sort" >
+                        <option>Pick a value</option>
+                        <option value="asc">Ascending</option>
+                        <option value="dec">Decending</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="tags">Tags</label>
+                        <input id="tags" name="tags" type="checkbox"/>
+                    </p>
+                <button type="submit">Submit</button>
+            </form>
         </section> 
     </main>
     
