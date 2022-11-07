@@ -59,20 +59,11 @@ function totalFees() {
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
     
     const sum = feeElements.reduce(
-        (previousValue, currentValue) => previousValue + currentValue,
-        0
-    ); // calculate total! 
+        (previousValue, currentValue) => previousValue + parseInt(currentValue.value), 0); // calculate total! 
     // once you have your total make sure to return it!
     return sum;
   }
 
-let Name = document.getElementById("adult_name");
-
-const info= {
-    name: Name,// pull from form,
-    cost: totalFees(),// total fees,
-    participantNum: participantNum
-}
 
 
 function successTemplate(info) {
@@ -88,7 +79,13 @@ function submitForm(event) {
     // do the rest of the stuff
     document.getElementById("formEl").classList.add('hide');
 
-    console.log(info)
+    let Name = document.getElementById("adult_name");
+
+    const info= {
+      name: Name.value,// pull from form,
+      cost: totalFees(),// total fees,
+      participantNum: participantNum
+  }
 
     // display sucess 
     const displayVar = successTemplate(info);
