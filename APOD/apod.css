@@ -1,0 +1,16 @@
+#apiPhotoInfo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#image {
+    grid-column: 1;
+}
+
+#info {
+    grid-column: 2;
+}
+
+img {
+    max-width: 80%;
+}
