@@ -27,3 +27,22 @@ function insertHtml(data) {
 }
 
 getApod(apodUrl)
+
+function showError(){
+    // select element (qs)
+    const element = document.querySelector("#errorMessage");
+    // remove hide class 
+    element.remove("#hide");
+}
+
+function hideError(){
+    // select element (qs)
+    const element = document.querySelector("#errorMessage");
+    // add hide class 
+    element.add("#hide");
+}
+
+showError()
+
+// try except with code 400 
+// display msg in 

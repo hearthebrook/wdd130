@@ -2,3 +2,21 @@
     color:palevioletred;
     font-size: 50;
 }
+
+:root {
+    --qutoeColor: blue;
+    --quoteWidth: 66ch;
+}
+.quote {
+    font-size: 1.2em;
+    font-family:'Courier New', Courier, monospace;
+    max-width: var(--quoteWidth);
+}
+.quote span {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    color: var(--qutoeColor);
+}
+.quote .author {
+    text-align: right;
+}

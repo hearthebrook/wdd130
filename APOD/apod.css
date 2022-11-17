@@ -1,3 +1,33 @@
+:root {
+    --dark-blue: #313d5a;
+    --platinum: #eaeaea;
+    --lilac: #73628a;
+    --fire-opal: #e3655b;
+    }
+
+body {
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    border-top: 2px solid var(--dark-blue);
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+h1 {
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.errorMessage {
+    background-color: var(--fire-opal);
+    padding: .3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: .3em;
+}
+
 #apiPhotoInfo {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -9,9 +39,26 @@
 
 #info {
     grid-column: 2;
-    color: #313D5A;
+}
+
+#info h2 {
+    color: var(--dark-blue);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#info h3 {
+    color: var(--dark-blue);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#info p {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 img {
     max-width: 80%;
+}
+
+.hide {
+    display: none;
 }
