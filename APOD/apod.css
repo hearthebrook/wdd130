@@ -62,3 +62,22 @@ img {
 .hide {
     display: none;
 }
+
+
+
+.searchBar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px 1fr;
+    background-color: var(--platinum);
+    padding: .3em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: .3em;
+}
+
+#getImage {
+    background-color: var(--lilac);
+    color: white;
+    padding: .3em;
+    margin: .3em;
+}
