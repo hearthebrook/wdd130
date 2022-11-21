@@ -58,4 +58,3 @@ function getApodByDate(event) {
 getApod(apodUrl);
 
 document.querySelector("#getImage").addEventListener('click', getApodByDate)
-
