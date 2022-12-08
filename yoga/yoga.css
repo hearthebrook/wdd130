@@ -120,6 +120,11 @@ footer {
     font-size: 1.1em;
 }
 
+footer p {
+    padding: 0em;
+    margin: 0em;
+}
+
 strong {
     font-weight: 700;
     font-size: 1.5em;
