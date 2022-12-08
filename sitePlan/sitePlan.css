@@ -5,8 +5,8 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #8f938a;
-  --secondary-color: #ddcbbf;
+  --primary-color: #ACAEA6;
+  --secondary-color: #F3E6DD;
   --accent1-color: #8c4843;
   --accent2-color: #AC9273;
 
@@ -75,6 +75,7 @@ p {
   color: var(--paragraph-color);
   padding: 1em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;

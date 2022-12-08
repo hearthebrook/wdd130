@@ -94,4 +94,3 @@ function submitForm(event) {
 }
 
 // if issues target form (Add id to form element HTML)
-document.querySelector('#submitButton').addEventListener('click', submitForm);

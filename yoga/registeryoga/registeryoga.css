@@ -32,87 +32,43 @@ body {
     background-color: var(--secondary-color);
 }
 
-header {
-    background-color: var(--primary-color);
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color);
-    padding: 1em;
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
   }
 
-nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    list-style-type: none;
-    }
-
 ul {
-    display: grid;
-    grid-template-columns: 140px 120px 100px 100px 50px;
-    justify-content: end;
+  display: grid;
+  grid-template-columns: 140px 120px 100px 100px 50px;
 }
 nav a {
-    padding: 1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-    }
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  }
 
 nav a:link,
 nav a:visited {
-    color: var(--nav-link-color);
-    }
+  color: var(--nav-link-color);
+  }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    }
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  }
 
 li {
-    display: inline;
-    background-color: var(--light-accent-color);
+  display: inline;
+  background-color: var(--light-accent-color);
 }
 
-main {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    padding: 2em;
+header {
+    background-color: var(--primary-color);
 }
-
-#quote {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-    padding: 1em;
-    font-size: 1.5em;
-    opacity: 0.7;
-}
-
-#quote p {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-    padding: 1em;
-}
-
-#schedule {
-    text-align: center;
-} 
-
-#schedule p {
-    padding: 0em;
-    font-size: 1.2em;
-    color: var(--nav-hover-background-color);
-} 
 
 footer {
     text-align: center;
@@ -121,7 +77,6 @@ footer {
 }
 
 strong {
-    font-weight: 700;
-    font-size: 1.5em;
+  font-weight: 700;
+  font-size: 1.3em;
 }
-
